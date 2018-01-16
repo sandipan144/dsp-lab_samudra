@@ -1,0 +1,5 @@
+n=0:1:10;
+r=(n);
+stem(n,r)
+xlabel('n'),ylabel('r')
+title('1507457')

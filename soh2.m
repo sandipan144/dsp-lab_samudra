@@ -1,0 +1,11 @@
+clc;
+clear all;
+close all;
+t = 0:0.01:1;
+f = 5;
+a = 5;
+y = a*sin(2*pi*f*t);
+plot(t,y);
+title ('Sine plot with frequency 5Hz');
+xlabel ('Time');
+ylabel ('Amplitude');

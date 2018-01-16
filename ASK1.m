@@ -1,0 +1,33 @@
+clc;
+clear all;
+close all;
+x=input('Enter the input digital sequence');
+N=length(x);
+t=0.01:0.01:N;
+c=2*sin(2*pi*t);
+for i=1:1:N
+    m((i-1)*100+1:i*100)=x(i);
+end
+y=c.*m;
+subplot(3,1,1);
+plot(t,m);
+xlabel('time');
+ylabel('amplitude');
+title('digital input signal');
+subplot(3,1,2);
+plot(t,c);
+xlabel('time');
+ylabel('amplitude');
+title('sinusoidal signal');
+subplot(3,1,3);
+plot(t,y);
+xlabel('time');
+ylabel('amplitude');
+title('ASK modulated signal');
+r=randn(1,length(y));
+k=y+r;
+figure;
+plot(t,k);
+xlabel('time');
+ylabel('amplitude');
+title('noise added ASK signal');

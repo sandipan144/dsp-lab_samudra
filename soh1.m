@@ -1,0 +1,10 @@
+clc;
+clear all;
+close all;
+x = [1:100];
+y = rand(1,100);
+y = (2*y)-1;
+plot(x,y);
+title('Generation of random variable');
+xlabel('x-axis');
+ylabel('y-axis');

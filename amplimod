@@ -1,0 +1,11 @@
+clc;
+close all;
+clear all;
+Am=input('Enter message signal amplitude');
+Ac=input('Enter message signal amplitude');
+Fm=input('Enter message signal amplitude');
+Fc=input('Enter message signal amplitude');
+t=0:0.00001*pi:2*pi;
+m=Am*sin(2*pi*Fm*t);
+subplot(3,1,1);
+Fy=plot(t,m)
